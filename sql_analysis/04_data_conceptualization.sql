@@ -12,16 +12,4 @@ FROM NATIONAL_VENDOR_INVOICES_LAST_YEAR;
 
 /*
 Run date: 2025-12-01
-Data source: NATIONAL_VENDOR_INVOICES_2025, NATIONAL_VENDOR_INVOICES_2024 (via LAST_YEAR view)
-
-ensures data values
-
- | Date      |
- |-----------|
- | 2024-10-01|
- | 2025-09-30|
-
-Notes:
-	- Created view combing table data between 2024 and 2025 filtering between fiscal Q2 2024 through Q1
-	- Calculations needed: checkin_minutes
 */
