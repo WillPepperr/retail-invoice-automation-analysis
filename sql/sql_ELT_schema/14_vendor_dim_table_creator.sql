@@ -9,19 +9,7 @@ SELECT
     vendor_category 
 
 FROM 
-    VENDOR_INVOICES_2024
-
-UNION
-
-SELECT 
-    vendor_id,
-    vendor_name,
-    vendor_size,
-    vendor_category 
-FROM 
-    VENDOR_INVOICES_2025
-
-
+	VENDOR_INVOICES
 /* 
-Run Date: 12/10/25
+Run Date: 12/16/25
 */

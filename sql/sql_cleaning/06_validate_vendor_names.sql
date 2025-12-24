@@ -3,7 +3,7 @@
 
 WITH vendors AS (
     SELECT DISTINCT vendor_name
-    FROM RETAIL_ANALYTICS.CLEAN.VENDOR_INVOICES_LAST_YEAR
+    FROM VENDOR_INVOICES
 ),
 pairs AS (
     SELECT
@@ -21,9 +21,8 @@ SELECT
 FROM pairs
 WHERE edit_distance BETWEEN 1 AND 3 
 ORDER BY edit_distance, name_1, name_2
-LIMIT 500;
-
 
 /*
-Run date: 2025-12-01
+Run date: 2025-12-15
 */
+
