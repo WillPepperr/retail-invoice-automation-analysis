@@ -29,3 +29,6 @@ A large grocery retailer with 290 stores is implementing a new inventory managem
 ### Executives speculate at least $2M in annual cost savings are needed to justify implementation, which senerios of vendors accepting this new system would be needed? 
 #### Assumptions:
     - 80% of invoices will be autonomous 
+
+
+![Alt text](visuals/bi_preview.gif)
