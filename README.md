@@ -24,36 +24,120 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 ### 1.) How much would be saved, in labor cost, if recieving at retail stores was automated for all vendors?
 
+---
+
 ### 2.) Given the system is adopted, which vendors and regions are priority to accept the new recieving system?
-
+---
 ### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, which senerios of vendors accepting this new system would be needed? 
-
+---
 #### Assumptions:
-    - Every store utalizes the technology, and every vendor adopts and accepts its use
-    - Labor costs $20 an hour on average, 5 minutes of overhead productivity are lost while photocopying invoices on average
-    - 80% effective at making the process autonomous, and 20% will have to be applied manually and would take the same amount of time as the old system to validate, effectively reducing savings by 20% compared to perfect conditions
+- Every store utalizes the technology, and every vendor adopts and accepts its use
+- Labor costs $20 an hour on average, 5 minutes of overhead productivity are lost while photocopying invoices on average
+- 80% effective at making the process autonomous, and 20% will have to be applied manually and would take the same amount of time as the old system to validate, effectively reducing savings by 20% compared to perfect conditions
 
+
+# Retail Invoice Analysis – Executive & Operational Insights
 
 ## Executive Summary
 
-##### Based on results of the previous year, given all stores adopt the new system, and each vendor utalizes it properly, with an average wage rate of $20/ hr, savings would be over 5.7 million annualy. Each store that adopts the system will save on average 19.7K Annually. 
+Based on invoice activity over the most recent 12-month period, total estimated labor cost associated with manual invoice check-in is $7.14M annually across 290 stores. Under the assumed conditions—an average labor rate of $20/hr and 80% automation effectiveness—the estimated achievable labor savings total $5.71M annually, exceeding the $2M executive justification threshold by a wide margin.
 
-##### The 34 National vendors in the "Large" category contribute 50% of the estimated annual labor cost. Stores are densest in the west and south regions, with California, Texas, and Florida accounting for 119 stores and almost 2.4 million in annual labor cost. There are 32 national vendors each contributing over 110K in labor costs, totaling over 4.3 million.  
+On average:
+- Each invoice requires **8.98 total labor minutes**
+- **3.98 minutes** are attributable to the check-in process
+- Resulting in an **average labor cost of $2.99 per invoice**
 
-##### The top 32 vendors contribute between 110K and 190K annually to check-in labor cost. A mix of 14 to 17 of these vendors adopting nationally to all stores will reach the $2 Million threshold. 
+These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation.
+
+---
+
+## Key Operational Metrics
+
+### Invoice Processing Efficiency
+- **Average Check-in Time:** 3.98 minutes  
+- **Average Total Labor Time per Invoice:** 8.98 minutes  
+- **Average Labor Cost per Invoice:** $2.99  
+
+Check-in activities alone account for approximately **44% of total invoice labor time**, reinforcing the value of automation even when partial manual intervention remains necessary.
+
+---
+
+## Vendor Cost Concentration
+
+### Annual Labor Cost by Vendor
+- **Total vendor invoice labor cost:** $7.14M
+- **Vendors > $100K:** 76% ($5.4M)
+- **$20K–$80K vendors:** 13% ($0.9M)
+- **< $20K vendors:** 11% ($0.8M)
+
+Labor cost is highly concentrated among a small subset of vendors, making targeted adoption strategies viable and impactful.
+
+---
+
+## Vendor Category Insights
+
+### Labor Cost Distribution
+- **Produce:** $2.3M (32%)
+- **Bread:** $2.0M (29%)
+- **Dairy:** $1.2M (17%)
+- **Liquor, Beverages, Frozen, Snacks:** $1.7M combined (22%)
+
+Produce and bread alone account for over **60% of total labor cost**, supporting category-led rollout strategies.
+
+---
+
+## Temporal Trends
+
+Invoice labor costs remain **stable month-over-month** with no significant seasonality, supporting predictable annualized savings projections and reduced implementation risk.
+
+---
+
+## Adoption Threshold Analysis
+
+- **Top 32 vendors:** $110K–$190K annual labor cost each
+- **14–17 vendors adopted nationally** exceed the $2M savings threshold
+- Full national adoption materially exceeds required ROI
+
+This supports phased vendor rollout strategies.
+
+---
+
+## Operational Complexity Considerations
+
+### Check-in Time by Delivery Size
+- **Large deliveries:** ~4.3 minutes
+- **Medium deliveries:** ~3.9 minutes
+- **Small deliveries:** ~3.2 minutes
+
+Automation benefits apply broadly across delivery sizes.
+
+---
+
+## Implications for Operations Leadership
+
+- Invoice processing is a recurring, structural labor cost
+- Savings are predictable and concentrated
+- Partial adoption yields strong returns
+- Regional or category-led rollouts accelerate value realization
+- Automation reduces non-value-added labor without disrupting store operations
 
 
-## Analysus Deep Dive
 
-### Vendor contributions
+## Scenario Modeling & Controls
 
+The BI dashboard supports real-time scenario analysis through:
+- Adjustable wage rate assumptions
+- Variable date ranges
+- Vendor category and cost-tier filtering
+- Automation effectiveness slider
 
-
-
-## BI Dashboard
+These controls allow stakeholders to validate savings under conservative or aggressive assumptions.
 
 ![Alt text](visuals/bi_preview.gif)
 
+---
+
 ## Data Strucutre
+
 
 ## Caviats and Considerations                                       
