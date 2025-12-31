@@ -2,8 +2,18 @@
 
 ## Table of Contents
 
+
+## Project Context
+
+- **Organization Type:** National grocery retailer
+- **Store Count:** 290 locations
+- **Time Period Analyzed:** Prior 12 months
+- **Primary Audience:** Operations leadership
+- **Secondary Stakeholders:** Finance, Vendor Management, IT Transformation
+- **Objective:** Quantify labor savings opportunity from automated invoice receiving
+
 ## Scenerio
-A national grocery retailer with 290 stores is implementing a new inventory management system which applies ML/AI interfaces to support more effective purchasing and inventory management. It connects seemlessly to the current corporate ERP, Inventory management, and SCM systems, and is estimated to save over $45 million annualy by anticipating and preventing product shrinkage, and auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional autometed recieving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but can eliminate the need for a user to be present with 80% of transactions able to be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor cost.
+A national grocery retailer with 290 stores is implementing a new inventory management system that applies ML/AI interfaces to support more effective purchasing and inventory management. It seamlessly integrates with the current corporate ERP, Inventory management, and SCM systems, and is estimated to save over $45 million annually by anticipating and preventing product shrinkage, as well as making auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional automated receiving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but it can eliminate the need for a user to be present, as 80% of transactions can be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor costs.
 
 <table>
   <tr>
@@ -24,18 +34,22 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 ### 1.) How much would be saved, in labor cost, if recieving at retail stores was automated for all vendors?
 
----
-
 ### 2.) Given the system is adopted, which vendors and regions are priority to accept the new recieving system?
----
+
 ### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, which senerios of vendors accepting this new system would be needed? 
----
+
 #### Assumptions:
 - Every store utalizes the technology, and every vendor adopts and accepts its use
 - Labor costs $20 an hour on average, 5 minutes of overhead productivity are lost while photocopying invoices on average
 - 80% effective at making the process autonomous, and 20% will have to be applied manually and would take the same amount of time as the old system to validate, effectively reducing savings by 20% compared to perfect conditions
 
+#### Constraints & Considerations
+- Vendor participation is voluntary
+- Automation effectiveness may vary by vendor and delivery type
+- Labor rates vary by region but are modeled at an average rate
+- Invoice complexity and exception handling are not explicitly modeled
 
+---
 # Retail Invoice Analysis – Executive & Operational Insights
 
 ## Executive Summary
@@ -49,7 +63,16 @@ On average:
 
 These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation.
 
----
+--- 
+
+
+## Data Structure
+
+- Invoice-level fact data
+- Vendor and vendor-category dimensions
+- Date dimension for time-based aggregation
+- Delivery size classification for operational analysis
+- See (Data Schema) for technical details
 
 ## Key Operational Metrics
 
@@ -60,7 +83,7 @@ These findings indicate invoice processing is a meaningful and repeatable operat
 
 Check-in activities alone account for approximately **44% of total invoice labor time**, reinforcing the value of automation even when partial manual intervention remains necessary.
 
----
+
 
 ## Vendor Cost Concentration
 
@@ -72,7 +95,7 @@ Check-in activities alone account for approximately **44% of total invoice labor
 
 Labor cost is highly concentrated among a small subset of vendors, making targeted adoption strategies viable and impactful.
 
----
+
 
 ## Vendor Category Insights
 
@@ -84,13 +107,14 @@ Labor cost is highly concentrated among a small subset of vendors, making target
 
 Produce and bread alone account for over **60% of total labor cost**, supporting category-led rollout strategies.
 
----
+
 
 ## Temporal Trends
 
 Invoice labor costs remain **stable month-over-month** with no significant seasonality, supporting predictable annualized savings projections and reduced implementation risk.
 
----
+
+
 
 ## Adoption Threshold Analysis
 
@@ -100,7 +124,7 @@ Invoice labor costs remain **stable month-over-month** with no significant seaso
 
 This supports phased vendor rollout strategies.
 
----
+
 
 ## Operational Complexity Considerations
 
@@ -111,7 +135,6 @@ This supports phased vendor rollout strategies.
 
 Automation benefits apply broadly across delivery sizes.
 
----
 
 ## Implications for Operations Leadership
 
@@ -135,9 +158,13 @@ These controls allow stakeholders to validate savings under conservative or aggr
 
 ![Alt text](visuals/bi_preview.gif)
 
+![Alt text](visuals/deep_dive_bi_visualization.png)
 ---
 
-## Data Strucutre
 
 
-## Caviats and Considerations                                       
+## Caviats and Considerations
+- Savings estimates reflect labor time only; system licensing and implementation costs are excluded
+- Benefits assume process adherence at store level
+- Results do not account for secondary benefits such as shrink reduction or improved invoice accuracy
+- Findings are directional and intended to inform prioritization, not replace formal financial modeling                                       
