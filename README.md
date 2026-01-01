@@ -7,7 +7,7 @@
 - [Deep-Dive Analysis](#key-operational-metrics)
 - [Recommended Next Steps](#recommended-next-steps)
 - [Scenario Modeling & Controls](#scenario-modeling--controls)
-
+- [Data Schema](/data/data_structure.md)
 
 ## Project Context
 
