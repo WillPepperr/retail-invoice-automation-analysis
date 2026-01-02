@@ -5,9 +5,11 @@
 - [Executive Summary](#executive-summary)
 - [Data Structure](#data-structure)
 - [Deep-Dive Analysis](#key-operational-metrics)
-- [Recommended Next Steps](#recommended-next-steps)
+- [Implementation Strategy](#implementation-strategy-options)
 - [Scenario Modeling & Controls](#scenario-modeling--controls)
-- [Data Schema](/data/data_structure.md)
+- [Data Schema (leave page)](data/data_structure.md)
+
+Implementation Strategy Options
 
 ## Project Context
 
@@ -19,7 +21,7 @@
 - **Objective:** Quantify labor savings opportunity from automated invoice receiving
 
 ## Scenario
-A national grocery retailer with 290 stores is implementing a new inventory management system that applies ML/AI interfaces to support more effective purchasing and inventory management. It seamlessly integrates with the current corporate ERP, Inventory management, and SCM systems, and is estimated to save over $45 million annually by anticipating and preventing product shrinkage, as well as making auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional automated receiving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but it can eliminate the need for a user to be present, as 80% of transactions can be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor costs.
+A national grocery retailer with 290 stores is implementing a new inventory management system that applies ML/AI interfaces to support more effective purchasing and inventory management. It seamlessly integrates with the current corporate ERP, Inventory management, and SCM systems, and is estimated to save over $45 million annually by anticipating and preventing product shrinkage, as well as making auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional automated receiving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but it can eliminate the need for a reciever to be present, as 80% of transactions can be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor costs. 
 
 <table>
   <tr>
@@ -83,6 +85,7 @@ These findings indicate invoice processing is a meaningful and repeatable operat
 
 ### Invoice Processing Efficiency
 - **Average Check-in Time:** 3.98 minutes  
+- **Invoice Process Overhead:** 5 minutes
 - **Average Total Labor Time per Invoice:** 8.98 minutes  
 - **Average Labor Cost per Invoice:** $2.99  
 
@@ -96,8 +99,7 @@ Check-in activities alone account for approximately **44% of total invoice labor
 - **\$20K–\$80K vendors:** 13% ($0.9M)
 - **< \$20K vendors:** 11% ($0.8M)
 
-
-![Alt text](visuals/invoice_labor_cost_estimate_by_month.png)
+![Alt text](visuals/invoice_labor_cost_estimate_by_annual_amount.png)
 
 Labor cost is highly concentrated among a small subset of vendors, making targeted adoption strategies viable and impactful.
 
@@ -109,7 +111,7 @@ Labor cost is highly concentrated among a small subset of vendors, making target
 - **Dairy:** $1.2M (17%)
 - **Liquor, Beverages, Frozen, Snacks:** $1.7M combined (22%)
 
-![Alt text](visuals/invoice
+![Alt text](visuals/invoice_labor_cost_estimate_by_month.png)
 
 Produce and bread alone account for over **60% of total labor cost**, supporting category-led rollout strategies.
 
@@ -168,10 +170,78 @@ Automation benefits apply broadly across delivery sizes.
 - Regional or category-led rollouts accelerate value realization
 - Automation reduces non-value-added labor without disrupting store operations
 
-## Recommended Next Steps
-- Pilot automated receiving with top 10–15 national vendors
-- Validate labor time reductions in live store environments
-- Incorporate regional wage variance into savings model
+---
+
+## Implementation Strategy Options
+
+Multiple implementation paths exist for automated receiving. Each carries different operational, technical, and vendor-management implications. The optimal approach may vary by vendor profile, region, and distributor operating model.
+
+### Option 1: National Vendor Agreement–Led Rollout
+
+A single agreement with large, national vendors enables the fastest path to material savings.
+
+#### Optimal For
+- Vendors operate consistently across regions and states
+- Centralized vendor IT and logistics systems
+- High invoice volume across many stores
+
+**Advantages**
+- Maximizes savings quickly
+- Simplifies governance and change management
+- Reduces regional fragmentation
+
+**Considerations**
+- Vendors may need to invest in compatible IT or process changes
+- Adoption timelines are outside direct retailer control
+- Not all national vendors may be willing or able to comply
+
+### Option 2: Regional or State-Based Rollout
+
+Implementation is prioritized in high-density regions or states with the greatest savings potential.
+
+#### Optimal For
+- Regional distributors operate semi-independently
+- Vendor practices differ materially by geography
+- Pilot-and-expand strategy is preferred
+
+**Advantages**
+- Faster localized deployment
+- Lower upfront vendor coordination risk
+- Enables operational learning before national scale
+
+**Considerations**
+- Slower realization of total enterprise savings
+- Requires region-specific change management
+- May introduce temporary process inconsistency
+
+### Option 3: Hybrid Strategy (Vendor Tier + Geography)
+
+Combines national vendor adoption with regional pilots for smaller or regional vendors.
+
+#### Optimal For
+- Vendor base is highly fragmented
+- Large vendors deliver most volume, smaller vendors vary by region
+- Operations seeks flexibility without sacrificing scale
+
+**Advantages**
+- Balances speed and risk
+- Captures majority of savings early
+- Maintains optionality for phased expansion
+
+**Considerations**
+- Increased coordination complexity
+- Requires clear governance and rollout sequencing
+
+### Key Assumptions & Operational Dependencies
+
+The modeled savings assume idealized conditions. Real-world execution will depend on several external and internal factors:
+
+- Vendor IT readiness: Some vendors may need system upgrades or integration work
+- Distributor variability: Regional distributors may follow different receiving or invoicing practices
+- Process standardization: Degree of consistency in delivery, documentation, and exception handling
+- Change adoption: Store-level compliance and training effectiveness
+- Automation effectiveness: Actual autonomy rates may vary by vendor and delivery type
+
 
 ## Scenario Modeling & Controls
 
