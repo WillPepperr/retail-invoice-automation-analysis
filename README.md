@@ -61,10 +61,6 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 Based on invoice activity over the most recent 12-month period, total estimated labor cost associated with manual invoice check-in is \$7.14M annually across 290 stores. Under the assumed conditions—an average labor rate of \$20/hr and 80% automation effectiveness—the estimated achievable labor savings total \$5.71M annually, exceeding the $2M executive justification threshold by a wide margin.
 
-**Invoice-Level Averages**
-- **Total labor time:** 8.98 minutes
-- **Check-in time:** 3.98 minutes
-- **Labor cost per invoice:** $2.99
 
 These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation.
 
@@ -100,6 +96,9 @@ Check-in activities alone account for approximately **44% of total invoice labor
 - **\$20K–\$80K vendors:** 13% ($0.9M)
 - **< \$20K vendors:** 11% ($0.8M)
 
+
+![Alt text](visuals/invoice_labor_cost_estimate_by_month.png)
+
 Labor cost is highly concentrated among a small subset of vendors, making targeted adoption strategies viable and impactful.
 
 ## Vendor Category Insights
@@ -110,17 +109,41 @@ Labor cost is highly concentrated among a small subset of vendors, making target
 - **Dairy:** $1.2M (17%)
 - **Liquor, Beverages, Frozen, Snacks:** $1.7M combined (22%)
 
+![Alt text](visuals/invoice
+
 Produce and bread alone account for over **60% of total labor cost**, supporting category-led rollout strategies.
 
-## Geographical Impact 
+## Regional Analysis
+
+Labor savings potential is concentrated in regions with the highest store density.
+
+- **West:** 105 stores, ~\$2.09M in estimated annual labor savings  
+- **South:** 95 stores, ~\$1.87M 
+- **Midwest:** 69 stores, ~\$1.34M  
+- **Northeast:** 21 stores, ~\$0.41M   
+
+At the state level, savings are most concentrated in:
+- **California:** 64 stores, ~\$1.31M  
+- **Texas:** 30 stores, ~\$0.59M  
+- **Florida:** 25 stores, ~\$0.50M  
+
+These three states alone represent **119 stores (41% of 290 total stores) and nearly \$2.4M in annual labor savings**, making them strong candidates for early regional or state-level rollout pilots.
+
+
+### Regional Implications
+- The West and South regions together account for the majority (70%) of estimated labor savings
+- Savings scale primarily with store count rather than regional process differences
+- Prioritizing rollout in these regions and states accelerates value realization while minimizing operational risk
 
 ## Temporal Trends
 
 Invoice labor costs remain **stable month-over-month** with no significant seasonality, supporting predictable annualized savings projections and reduced implementation risk.
 
+![alt text](visuals/invoice_labor_cost_estimate_by_month_total.png)
+
 ## Adoption Threshold Analysis
 
-- **Top 32 vendors:** \$110K–\$190K annual labor cost each
+- **Top 32 vendors:** \$110K–\$190K potential annual labor savings each
 - **14–17 vendors adopted nationally** exceed the $2M savings threshold
 - Full national adoption materially exceeds required ROI
 
@@ -132,6 +155,8 @@ This supports phased vendor rollout strategies.
 - **Large deliveries:** ~4.3 minutes
 - **Medium deliveries:** ~3.9 minutes
 - **Small deliveries:** ~3.2 minutes
+
+![alt text](visuals/Average%20Check-in%20Minutes%20by%20Delivery%20Size.png)
 
 Automation benefits apply broadly across delivery sizes.
 
@@ -163,5 +188,6 @@ These controls allow stakeholders to validate savings under conservative or aggr
 
 ### Deep-Dive Analysis View
 ![Alt text](visuals/deep_dive_bi_visualization.png)
----
-                              
+
+### Regional Analysis View
+![Alt text](visuals/regional_analysis_view.png)
