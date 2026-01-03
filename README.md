@@ -9,7 +9,6 @@
 - [Scenario Modeling & Controls](#scenario-modeling--controls)
 - [Data Schema (seperate page)](data/data_structure.md)
 
-Implementation Strategy Options
 
 ## Project Context
 
