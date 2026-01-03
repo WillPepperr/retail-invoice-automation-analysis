@@ -7,7 +7,7 @@
 - [Deep-Dive Analysis](#key-operational-metrics)
 - [Implementation Strategy](#implementation-strategy-options)
 - [Scenario Modeling & Controls](#scenario-modeling--controls)
-- [Data Schema (leave page)](data/data_structure.md)
+- [Data Schema (seperate page)](data/data_structure.md)
 
 Implementation Strategy Options
 
@@ -21,7 +21,7 @@ Implementation Strategy Options
 - **Objective:** Quantify labor savings opportunity from automated invoice receiving
 
 ## Scenario
-A national grocery retailer with 290 stores is implementing a new inventory management system that applies ML/AI interfaces to support more effective purchasing and inventory management. It seamlessly integrates with the current corporate ERP, Inventory management, and SCM systems, and is estimated to save over $45 million annually by anticipating and preventing product shrinkage, as well as making auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional automated receiving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but it can eliminate the need for a reciever to be present, as 80% of transactions can be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor costs. 
+A national grocery retailer with 290 stores is implementing a new inventory management system that applies ML/AI interfaces to support more effective purchasing and inventory management. It seamlessly integrates with the current corporate ERP, inventory management, and SCM systems, and is estimated to save over $45 million annually by anticipating and preventing product shrinkage, as well as making auto pricing adjustments to meet dynamic market conditions. The vendor providing the system is offering an additional automated receiving system, promising to automate inventory check-ins by both local and national vendors. It requires vendor agreement to use, but it can eliminate the need for a receiver to be present, as approximately 80% of transactions can be performed autonomously. This system also eliminates the need for physical invoices to be manually photocopied, which saves substantial labor costs. 
 
 <table>
   <tr>
@@ -40,15 +40,15 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 ## Business Questions
 
-### 1.) How much would be saved, in labor cost, if recieving at retail stores was automated for all vendors?
+#### 1.) How much would be saved in labor cost, if recieving at retail stores was automated for all vendors?
 
-### 2.) Given the system is adopted, which vendors and regions are priority to accept the new recieving system?
+#### 2.) Given the system is adopted, which vendors and regions are priorities to accept the new receiving system?
 
-### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, is this feasable? How many vendors or stores would be needed to adopt?
+#### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, is this feasible? How many vendors or stores would be needed to adopt?
 
 #### Assumptions:
-> - Every store utalizes the technology, and every vendor adopts and accepts its use
-> - Labor costs $20 an hour on average, 5 minutes of overhead productivity are lost while photocopying invoices on average
+> - Every store utilizes the technology, and every vendor adopts and accepts its use
+> - Labor costs $20 an hour on average; 5 minutes of overhead productivity are lost while photocopying invoices on average
 > - 80% effective at making the process autonomous, and 20% will have to be applied manually and would take the same amount of time as the old system to validate, effectively reducing savings by 20% compared to perfect conditions
 
 #### Caveats & Considerations
@@ -61,10 +61,10 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 ## Executive Summary
 
-Based on invoice activity over the most recent 12-month period, total estimated labor cost associated with manual invoice check-in is \$7.14M annually across 290 stores. Under the assumed conditions—an average labor rate of \$20/hr and 80% automation effectiveness—the estimated achievable labor savings total \$5.71M annually, exceeding the $2M executive justification threshold by a wide margin.
+Based on invoice activity over the most recent 12-month period, total estimated labor cost associated with manual invoice check-in is \$7.14M annually across 290 stores. Under the assumed conditions—an average labor rate of \$20/hr and 80% automation effectiveness—the estimated achievable labor savings total \$5.71M annually, exceeding the **$2M** executive justification threshold by a wide margin.
 
 
-These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation. Strategies for implementation can be found in the [Implementation Strategy](#implementation-strategy-options) section
+These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation. Strategies for implementation can be found in the [Implementation Strategy](#implementation-strategy-options) section.
 
 --- 
 
@@ -118,7 +118,7 @@ Labor cost is highly concentrated among a small subset of vendors (32 contributi
 
 
 
-Produce and bread alone account for over **60% of total labor cost.** This is due to volume of invoices processed, and represents the number of invoices needing processed per product group. While most time is attributed to produce, bread, and dairy, priority should be delegated by individual vendor volume, and not given to all vendors strictly on their product group.
+Produce and bread alone account for over **60% of total labor cost.** This is due to the volume of invoices processed, and represents the number of invoices needing to be processed per product group. While most time is attributed to produce, bread, and dairy, priority should be delegated by individual vendor volume, and not given to all vendors strictly on their product group.
 
 ![Alt text](visuals/invoice_count_by_category.png)
 
@@ -126,8 +126,8 @@ Produce and bread alone account for over **60% of total labor cost.** This is du
 
 Labor savings potential is concentrated in regions with the highest store density.
 
-- **West:** 105 stores, ~\$2.09M in estimated annual labor savings  
-- **South:** 95 stores, ~\$1.87M 
+- **West:** 105 stores, ~\$2.09M estimated annual labor savings  
+- **South:** 95 stores, ~\$1.87M  
 - **Midwest:** 69 stores, ~\$1.34M  
 - **Northeast:** 21 stores, ~\$0.41M   
 
@@ -174,7 +174,7 @@ Automation benefits apply broadly across delivery sizes.
 ## Adoption Threshold Analysis
 
 - **Top 32 vendors:** \$110K–\$190K potential annual labor savings each
-- **14–17 vendors adopted nationally** exceed the $2M savings threshold
+- **14–17 vendors adopted nationally** exceed the **$2M** savings threshold
 - Full national adoption materially exceeds required ROI
 
 This supports phased vendor rollout strategies.
@@ -260,10 +260,13 @@ The BI dashboard supports real-time scenario analysis through:
 
 These controls allow stakeholders to validate savings under conservative or aggressive assumptions.
 
-### Scenerio Analysis Dashboard
+### Scenario Analysis Dashboard
 ![Alt text](visuals/bi_preview.gif)
 
-### Deep-Dive Analysis View
+## Operations Analysis
+![Alt text](visuals/operations_analysis.png)
+
+### Labor Cost Analysis View
 ![Alt text](visuals/deep_dive_bi_visualization.png)
 
 ### Regional Analysis View
