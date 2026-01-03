@@ -78,7 +78,7 @@ These findings indicate invoice processing is a meaningful and repeatable operat
 
 --- 
 
-## Analysis Deep Dive
+# Analysis Deep Dive
 
 ## Key Operational Metrics
 
@@ -262,7 +262,7 @@ These controls allow stakeholders to validate savings under conservative or aggr
 ### Scenario Analysis Dashboard
 ![Alt text](visuals/bi_preview.gif)
 
-## Operations Analysis
+### Operations Analysis
 ![Alt text](visuals/operations_analysis.png)
 
 ### Labor Cost Analysis View
