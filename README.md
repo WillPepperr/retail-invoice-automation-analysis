@@ -44,7 +44,7 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 
 ### 2.) Given the system is adopted, which vendors and regions are priority to accept the new recieving system?
 
-### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, which senerios of vendors accepting this new system would be needed? 
+### 3.) Executives speculate at least $2M in annual cost savings are needed to justify implementation, is this feasable? How many vendors or stores would be needed to adopt?
 
 #### Assumptions:
 > - Every store utalizes the technology, and every vendor adopts and accepts its use
@@ -64,7 +64,7 @@ A national grocery retailer with 290 stores is implementing a new inventory mana
 Based on invoice activity over the most recent 12-month period, total estimated labor cost associated with manual invoice check-in is \$7.14M annually across 290 stores. Under the assumed conditions—an average labor rate of \$20/hr and 80% automation effectiveness—the estimated achievable labor savings total \$5.71M annually, exceeding the $2M executive justification threshold by a wide margin.
 
 
-These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation.
+These findings indicate invoice processing is a meaningful and repeatable operational cost center suitable for automation. Strategies for implementation can be found in the [Implementation Strategy](#implementation-strategy-options) section
 
 --- 
 
@@ -95,13 +95,16 @@ Check-in activities alone account for approximately **44% of total invoice labor
 
 ### Annual Labor Cost by Vendor
 - **Total vendor invoice labor cost:** $7.14M
-- **Vendors > \$100K:** 76% ($5.4M)
-- **\$20K–\$80K vendors:** 13% ($0.9M)
-- **< \$20K vendors:** 11% ($0.8M)
+- **Vendors > \$100K (32):** 76% ($5.4M)
+- **\$20K–\$80K vendors (18):** 13% ($0.9M)
+- **< \$20K vendors (162):** 11% ($0.8M)
 
 ![Alt text](visuals/invoice_labor_cost_estimate_by_annual_amount.png)
 
-Labor cost is highly concentrated among a small subset of vendors, making targeted adoption strategies viable and impactful.
+
+> - TODO: add vendor time comparisons
+
+Labor cost is highly concentrated among a small subset of vendors (32 contributing 76%), making targeted adoption strategies viable and impactful with large vendor organizations.
 
 ## Vendor Category Insights
 
@@ -113,7 +116,11 @@ Labor cost is highly concentrated among a small subset of vendors, making target
 
 ![Alt text](visuals/invoice_labor_cost_estimate_by_month.png)
 
-Produce and bread alone account for over **60% of total labor cost**, supporting category-led rollout strategies.
+
+
+Produce and bread alone account for over **60% of total labor cost.** This is due to volume of invoices processed, and represents the number of invoices needing processed per product group. While most time is attributed to produce, bread, and dairy, priority should be delegated by individual vendor volume, and not given to all vendors strictly on their product group.
+
+![Alt text](visuals/invoice_count_by_category.png)
 
 ## Regional Analysis
 
@@ -143,14 +150,6 @@ Invoice labor costs remain **stable month-over-month** with no significant seaso
 
 ![alt text](visuals/invoice_labor_cost_estimate_by_month_total.png)
 
-## Adoption Threshold Analysis
-
-- **Top 32 vendors:** \$110K–\$190K potential annual labor savings each
-- **14–17 vendors adopted nationally** exceed the $2M savings threshold
-- Full national adoption materially exceeds required ROI
-
-This supports phased vendor rollout strategies.
-
 ## Operational Complexity Considerations
 
 ### Check-in Time by Delivery Size
@@ -171,6 +170,14 @@ Automation benefits apply broadly across delivery sizes.
 - Automation reduces non-value-added labor without disrupting store operations
 
 ---
+
+## Adoption Threshold Analysis
+
+- **Top 32 vendors:** \$110K–\$190K potential annual labor savings each
+- **14–17 vendors adopted nationally** exceed the $2M savings threshold
+- Full national adoption materially exceeds required ROI
+
+This supports phased vendor rollout strategies.
 
 ## Implementation Strategy Options
 
