@@ -101,8 +101,6 @@ Check-in activities alone account for approximately **44% of total invoice labor
 ![Alt text](visuals/invoice_labor_cost_estimate_by_annual_amount.png)
 
 
-> - TODO: add vendor time comparisons
-
 Labor cost is highly concentrated among a small subset of vendors (32 contributing 76%), making targeted adoption strategies viable and impactful with large vendor organizations.
 
 ## Vendor Category Insights
