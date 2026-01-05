@@ -258,7 +258,7 @@ The BI dashboard supports real-time scenario analysis through:
 These controls allow stakeholders to validate savings under conservative or aggressive assumptions.
 
 ### Scenario Analysis Dashboard
-![Alt text](visuals/bi_preview.gif)
+![Alt text](visuals/bi_preview.gif?raw=true)
 
 ### Operations Analysis
 ![Alt text](visuals/operations_analysis.png)
