@@ -1,6 +1,6 @@
 #  Data Transformation (ELT)
 
-After loading the origional Parquet file into Snowflake, the transaction table was transformed from the wide transactional dataset into a clean, analytics-ready star schema using SQL. The source data combined store, vendor, date, and invoice attributes in a single table, which were normalized by separating descriptive fields into dedicated dimension tables (store, vendor, and date) while retaining transactional metrics in a central fact table. This ELT approach reduced redundancy, enforced consistent keys, and improved query performance, in preperation for being loaded into Power BI for analysis and reporting.
+After loading the origional Parquet file into Snowflake, the transaction table was transformed from the wide transactional dataset into a clean, analytics-ready star schema using SQL. The source data combined store, vendor, date, and invoice attributes in a single table, which were normalized by separating descriptive fields into dedicated dimension tables (store, vendor, and date) while retaining transactional metrics in a central fact table. 
 
 <table>
   <tr>
